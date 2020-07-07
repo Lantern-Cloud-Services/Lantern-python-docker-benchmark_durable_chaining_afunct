@@ -22,14 +22,11 @@ def orchestrator_function(context: df.DurableOrchestrationContext):
         r = yield context.call_activity("DurableActivity", data)
         results.append(r)
     
-    # this summation could also be done via an additional activity function
-    total = 0
-    for val in results:
-        total += val
+    total = sum(results)
     
     end_time = time.time()
     total_time = end_time-start_time
-    final_result = f"With the input values base: {base}, exp: {exp} we calculated a total result of {total} in {total_time} seconds"
+    final_result = f"With the input values base: {base}, exp: {exp} we calculated a total result of {total} in {total_time} seconds using chaining."
 
     return final_result
 
