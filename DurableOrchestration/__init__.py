@@ -22,6 +22,7 @@ def orchestrator_function(context: df.DurableOrchestrationContext):
         r = yield context.call_activity("DurableActivity", data)
         results.append(r)
     
+    # this summation could also be done via an additional activity function
     total = 0
     for val in results:
         total += val
