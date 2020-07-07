@@ -28,7 +28,7 @@ def orchestrator_function(context: df.DurableOrchestrationContext):
     
     end_time = time.time()
     total_time = end_time-start_time
-    final_result = f"With the input values base: {base}, exp: {exp} we calculated a total result of {total}. in {total_time} seconds"
+    final_result = f"With the input values base: {base}, exp: {exp} we calculated a total result of {total} in {total_time} seconds"
 
     return final_result
 
