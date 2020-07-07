@@ -27,7 +27,7 @@ With output similar to
     "runtimeStatus": "Completed",
     "input": "{\"base\": \"3\", \"exp\": \"4\"}",
     "customStatus": null,
-    "output": "With the input values base: 3, exp: 4 we calculated a total result of 117. in 0.006218910217285156 seconds",
+    "output": "With the input values base: 3, exp: 4 we calculated a total result of 117 in 0.006218910217285156 seconds",
     "createdTime": "2020-07-07T06:07:46Z",
     "lastUpdatedTime": "2020-07-07T06:07:48Z"
 }
